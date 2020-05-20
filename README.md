@@ -3,7 +3,7 @@ Source code for my open source macro-keyboard
 
 This is the source code for my macro-keyboard created with a Pro-Micro Arduino. 
 
-#YouTube Build Video's 
+# YouTube Build Video's 
 
 Macro-keyboard part 1 -Construction
 https://youtu.be/gCawkMGU2Rg
@@ -14,7 +14,7 @@ https://youtu.be/TpiGVjqkxLY
 Macro-Keyboard part 3 - Initial programming
 https://youtu.be/YSDWSIaq9do
 
-#Glamor Shots
+# Glamor Shots
 ![](/rsc/Macro-Keyboard-1-500.JPG)
 ![](/rsc/Macro-Keyboard-2-500.JPG)
 
