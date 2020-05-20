@@ -18,6 +18,10 @@ https://youtu.be/YSDWSIaq9do
 ![](/rsc/Macro-Keyboard-1-500.JPG)
 ![](/rsc/Macro-Keyboard-2-500.JPG)
 
+# 3D Printed Case STL Files
+Case by Stefano Piaz (MakerStep) and available on Thingiverse. 
+https://www.thingiverse.com/thing:1211720
+
 # Folder Structure
 
     .
