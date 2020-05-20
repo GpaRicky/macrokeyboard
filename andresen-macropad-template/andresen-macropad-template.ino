@@ -44,8 +44,7 @@
 
 //Global Constants
 const byte ROWS = 4;  //four rows
-const byte COLS = 4;  //four columns
-    
+const byte COLS = 4;  //four columns    
 int Page = 1; //Create a variable to track what page of macros are loaded
 
 // the library will return the character inside this array
@@ -83,14 +82,12 @@ void loop() {
       if (key == 'B'){
         if (Page > 1) {
           --Page;
-         Serial.println(Page);
         }
       }
 
     if (key == 'C'){
             if (Page < 8) {
               Page++;
-             Serial.println(Page);
             }
           }
 
@@ -296,160 +293,505 @@ void loop() {
                   }                
 
 
-     case '5':
+    case '5':
                   if (Page==1) {
-                  //Select a word
-                  Mouse.click();
-                  Mouse.release();
-                  Mouse.click();
-                  Mouse.release();
-                break;
+                  //Macro Page 1 - Key 5 
+                  Keyboard.print("Page 1 - Key 5\n");
+                  Keyboard.releaseAll();
+                break;                    
                   }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key 5 
+                  Keyboard.print("Page 2 - Key 5\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
 
-                if (Page==2) {
-                 //Launch Chrome
-                 Keyboard.press(KEY_LEFT_GUI);
-                 Keyboard.release(KEY_LEFT_GUI);
-                 delay(1000);
-                 Keyboard.write('c');
-                 Keyboard.write('h');
-                 Keyboard.write('r');
-                 Keyboard.write('o');
-                 Keyboard.write('m');
-                 Keyboard.write('e');
-                 delay(100);
-                 Keyboard.press(KEY_RETURN);
-                 Keyboard.releaseAll();                   
-                 break;                    
-                  }
+                if (Page==3) {
+                  //Macro Page 3 - Key 5 
+                  Keyboard.print("Page 3 - Key 5\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key 5 
+                  Keyboard.print("Page 4 - Key 5\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key 5 
+                  Keyboard.print("Page 5 - Key 5\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key 5 
+                  Keyboard.print("Page 6 - Key 5\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key 5 
+                  Keyboard.print("Page 7 - Key 5\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key 5 
+                  Keyboard.print("Page 8 - Key 5\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
 
 
     case '6':
                   if (Page==1) {
-                  //Press End
-                  Keyboard.press(KEY_END);
+                  //Macro Page 1 - Key 6 
+                  Keyboard.print("Page 1 - Key 6\n");
                   Keyboard.releaseAll();
-                break;
-                  }
-
-                if (Page==2) {
-                //Launch Terminal
-                 Keyboard.press(KEY_LEFT_GUI);
-                 Keyboard.release(KEY_LEFT_GUI);
-                 delay(1000);
-                 Keyboard.write('c');
-                 Keyboard.write('m');
-                 Keyboard.write('d');
-                 delay(100);
-                 Keyboard.press(KEY_RETURN);
-                 Keyboard.releaseAll();  
-                  
-                 break;                    
-                  }
-
-
-     case '7':
-                  if (Page==1) {
-                  //Pess Page Down
-                  Keyboard.press(KEY_PAGE_DOWN);  
-                  Keyboard.releaseAll();
-                break;
-                  }
-
-                  if (Page==2) {
-                 //Launch Sublime
-                 Keyboard.press(KEY_LEFT_GUI);
-                 Keyboard.release(KEY_LEFT_GUI);
-                 delay(1000);
-                 Keyboard.write('s');
-                 Keyboard.write('u');
-                 Keyboard.write('b');
-                 Keyboard.write('l');
-                 Keyboard.write('i');
-                 Keyboard.write('m');
-                 Keyboard.write('e');
-                 delay(100);
-                 Keyboard.press(KEY_RETURN);
-                 Keyboard.releaseAll();   
                 break;                    
                   }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key 6 
+                  Keyboard.print("Page 2 - Key 6\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
 
-     case '8':
+                if (Page==3) {
+                  //Macro Page 3 - Key 6 
+                  Keyboard.print("Page 3 - Key 6\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key 6 
+                  Keyboard.print("Page 4 - Key 6\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key 6 
+                  Keyboard.print("Page 5 - Key 6\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key 6 
+                  Keyboard.print("Page 6 - Key 6\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key 6 
+                  Keyboard.print("Page 7 - Key 6\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key 6 
+                  Keyboard.print("Page 8 - Key 6\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+    case '7':
                   if (Page==1) {
-                  //Press Document End
-                  Keyboard.press(KEY_LEFT_CTRL);
-                  Keyboard.press(KEY_END);  
+                  //Macro Page 1 - Key 7 
+                  Keyboard.print("Page 1 - Key 7\n");
                   Keyboard.releaseAll();
-                break;
-                  }
-
-                  if (Page==2) {
-                  //Launch Arduino IDE
-                 Keyboard.press(KEY_LEFT_GUI);
-                 Keyboard.release(KEY_LEFT_GUI);
-                 delay(1000);
-                 Keyboard.write('a');
-                 Keyboard.write('r');
-                 Keyboard.write('d');
-                 Keyboard.write('u');
-                 Keyboard.write('i');
-                 Keyboard.write('n');
-                 Keyboard.write('o');
-                 delay(100);
-                 Keyboard.press(KEY_RETURN);
-                 Keyboard.releaseAll();   
-                  
                 break;                    
                   }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key 7 
+                  Keyboard.print("Page 2 - Key 7\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
 
-     case '9':
+                if (Page==3) {
+                  //Macro Page 3 - Key 7 
+                  Keyboard.print("Page 3 - Key 7\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key 7 
+                  Keyboard.print("Page 4 - Key 7\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key 7 
+                  Keyboard.print("Page 5 - Key 7\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key 7 
+                  Keyboard.print("Page 6 - Key 7\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key 7 
+                  Keyboard.print("Page 7 - Key 7\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key 7 
+                  Keyboard.print("Page 8 - Key 7\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+    case '8':
                   if (Page==1) {
-                  //Press Document 
-                  Keyboard.press(KEY_DOWN_ARROW);
+                  //Macro Page 1 - Key 8 
+                  Keyboard.print("Page 1 - Key 8\n");
                   Keyboard.releaseAll();
-                break;
-                  }
-
-                  if (Page==2) {
-                  //Page two goes here 
-                  
                 break;                    
                   }
-
-     case '0':
-                  if (Page==1) {
-                  //Press Document 
-                  //Select a word
-                  Mouse.click();
-                  Mouse.release();
-                  Mouse.click();
-                  Mouse.release();
-                  Mouse.click();
-                  Mouse.release();
-                break;
-                  }
-
+ 
                   if (Page==2) {
-                  //Page two goes here 
-                  
-                break;                    
-                  }
-     case 'D':
+                  //Macro Page 2 - Key 8 
+                  Keyboard.print("Page 2 - Key 8\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==3) {
+                  //Macro Page 3 - Key 8 
+                  Keyboard.print("Page 3 - Key 8\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key 8 
+                  Keyboard.print("Page 4 - Key 8\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key 8 
+                  Keyboard.print("Page 5 - Key 8\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key 8 
+                  Keyboard.print("Page 6 - Key 8\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key 8 
+                  Keyboard.print("Page 7 - Key 8\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key 8 
+                  Keyboard.print("Page 8 - Key 8\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+    case '9':
                   if (Page==1) {
-                  //Lock a windows workstation
-                  Keyboard.press(KEY_LEFT_GUI);
-                  Keyboard.write('l');
+                  //Macro Page 1 - Key 9 
+                  Keyboard.print("Page 1 - Key 9\n");
                   Keyboard.releaseAll();
-                break;
-                  }
-
-                  if (Page==2) {
-                  //Page two goes here 
-                  
                 break;                    
                   }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key 9 
+                  Keyboard.print("Page 2 - Key 9\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
 
+                if (Page==3) {
+                  //Macro Page 3 - Key 9 
+                  Keyboard.print("Page 3 - Key 9\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key 9 
+                  Keyboard.print("Page 4 - Key 9\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key 9 
+                  Keyboard.print("Page 5 - Key 9\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key 9 
+                  Keyboard.print("Page 6 - Key 9\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
 
+                if (Page==7) {
+                  //Macro Page 7 - Key 9 
+                  Keyboard.print("Page 7 - Key 9\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key 9 
+                  Keyboard.print("Page 8 - Key 9\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+  case '*':
+                  if (Page==1) {
+                  //Macro Page 1 - Key * 
+                  Keyboard.print("Page 1 - Key *\n");
+                  Keyboard.releaseAll();
+                break;                    
+                  }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key * 
+                  Keyboard.print("Page 2 - Key *\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==3) {
+                  //Macro Page 3 - Key * 
+                  Keyboard.print("Page 3 - Key *\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key * 
+                  Keyboard.print("Page 4 - Key *\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key * 
+                  Keyboard.print("Page 5 - Key *\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key * 
+                  Keyboard.print("Page 6 - Key *\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key * 
+                  Keyboard.print("Page 7 - Key *\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key * 
+                  Keyboard.print("Page 8 - Key *\n");
+                  Keyboard.releaseAll();                break;                    
+                  }      
+
+    case '0':
+                  if (Page==1) {
+                  //Macro Page 1 - Key 0 
+                  Keyboard.print("Page 1 - Key 0\n");
+                  Keyboard.releaseAll();
+                break;                    
+                  }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key 0 
+                  Keyboard.print("Page 2 - Key 0\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==3) {
+                  //Macro Page 3 - Key 0 
+                  Keyboard.print("Page 3 - Key 0\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key 0 
+                  Keyboard.print("Page 4 - Key 0\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key 0 
+                  Keyboard.print("Page 5 - Key 0\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key 0 
+                  Keyboard.print("Page 6 - Key 0\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key 0 
+                  Keyboard.print("Page 7 - Key 0\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key 0 
+                  Keyboard.print("Page 8 - Key 0\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+  case '#':
+                  if (Page==1) {
+                  //Macro Page 1 - Key # 
+                  Keyboard.print("Page 1 - Key #\n");
+                  Keyboard.releaseAll();
+                break;                    
+                  }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key # 
+                  Keyboard.print("Page 2 - Key #\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==3) {
+                  //Macro Page 3 - Key # 
+                  Keyboard.print("Page 3 - Key #\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key # 
+                  Keyboard.print("Page 4 - Key #\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key # 
+                  Keyboard.print("Page 5 - Key #\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key # 
+                  Keyboard.print("Page 6 - Key #\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key # 
+                  Keyboard.print("Page 7 - Key #\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key # 
+                  Keyboard.print("Page 8 - Key #\n");
+                  Keyboard.releaseAll();                break;                    
+                  }      
+
+    case 'A':
+                  if (Page==1) {
+                  //Macro Page 1 - Key A 
+                  Keyboard.print("Page 1 - Key A\n");
+                  Keyboard.releaseAll();
+                break;                    
+                  }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key A 
+                  Keyboard.print("Page 2 - Key A\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==3) {
+                  //Macro Page 3 - Key A 
+                  Keyboard.print("Page 3 - Key A\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key A 
+                  Keyboard.print("Page 4 - Key A\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key A 
+                  Keyboard.print("Page 5 - Key A\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key A 
+                  Keyboard.print("Page 6 - Key A\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key A 
+                  Keyboard.print("Page 7 - Key A\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key A 
+                  Keyboard.print("Page 8 - Key A\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+    case 'D':
+                  if (Page==1) {
+                  //Macro Page 1 - Key D
+                  Keyboard.print("Page 1 - Key D\n");
+                  Keyboard.releaseAll();
+                break;                    
+                  }
+ 
+                  if (Page==2) {
+                  //Macro Page 2 - Key D 
+                  Keyboard.print("Page 2 - Key D\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==3) {
+                  //Macro Page 3 - Key D 
+                  Keyboard.print("Page 3 - Key D\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                 if (Page==4) {
+                  //Macro Page 4 - Key D 
+                  Keyboard.print("Page 4 - Key D\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                  if (Page==5) {
+                  //Macro Page 5 - Key D 
+                  Keyboard.print("Page 5 - Key D\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+                
+                if (Page==6) {
+                  //Macro Page 6 - Key D 
+                  Keyboard.print("Page 6 - Key D\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==7) {
+                  //Macro Page 7 - Key D 
+                  Keyboard.print("Page 7 - Key D\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
+
+                if (Page==8) {
+                  //Macro Page 8 - Key D 
+                  Keyboard.print("Page 8 - Key D\n");
+                  Keyboard.releaseAll();                break;                    
+                  }                
              
 }
 
