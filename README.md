@@ -26,7 +26,9 @@ https://www.thingiverse.com/thing:1211720
 
     .
     ├── rsc                         # resoure files
-    └── andresen-macropad-source    # ino files for programming the Pro-Micro
+    └── andresen-macropad-source    # ino files for programming the Pro-Micro - this is how I have my macros programmed. 
+    └── andresen-macropad-template  # ino files for programming the Pro-Micro - Vanilla template with 112 macros programmed. 
+    
     
 # Code Details
 The current code that is published was a ground up re-write that added in licensing, better code-comments and the concept of macro pages with theoretical support up to 96 macros. The current code takes 29% of program memory on a pro-micro. 
